@@ -1,0 +1,47 @@
+input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #bcbcbc;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.files-content {
+    padding: 20px;
+}
+
+.derect-content {
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bcbcbc;
+    background-color: rgba(108, 108, 108, 0.755);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: rgba(157, 157, 157, 0.755);
+}
+
+.content {
+    width: 400px;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="input-group">
+        <input type="text" id="enterEmail" placeholder="email">
+        <input type="text" id="enterPass" placeholder="password">
+        <button class="btn" id="loginEnter">войти</button>
+    </div>
+
+    <div class="main">
+        <div class="files-content">
+            <div class="input-group">
+                <input type="text" id="getFileInput" placeholder="id">
+                <button class="btn" id="getFileBtn">найти файл</button>
+            </div>
+            <div class="input-group">
+                <input type="file" id="addFileInput">
+                <button class="btn" id="addFileBtn">добавить файл</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="renameFileId" placeholder="id">
+                <input type="text" id="renameFileInput" placeholder="new name">
+                <button class="btn" id="renameFileBtn">переименовать файл</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="deleteFileId" placeholder="id">
+                <button class="btn" id="deleteFileBtn">удалить файл</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="changeFileId" placeholder="id">
+                <input type="text" id="changeFileDerectId" placeholder="derect id">
+                <button class="btn" id="changeFileBtn">переместить файл в папку</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="changeSubFileId" placeholder="id">
+                <input type="text" id="changeSubFileDerectId" placeholder="subderect id">
+                <button class="btn" id="changeSubFileBtn">переместить файл в подпапку</button>
+            </div>
+            <div class="input-group">
+                <button class="btn" id="fileList">список файлов</button>
+            </div>
+        </div>
+
+        <div class="derect-content">
+            <div class="input-group">
+                <input type="text" id="addDerectInput" placeholder="имя папки">
+                <button class="btn" id="addDerectBtn">добавить папку</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="addSubDerectInput" placeholder="имя подпапки">
+                <input type="text" id="addSubDerectId" placeholder="в какю папку добавить">
+                <button class="btn" id="addSubDerectBtn">добавить подпапку</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="renameDerectId" placeholder="id">
+                <input type="text" id="renameDerectInput" placeholder="new name">
+                <button class="btn" id="renameDerectBtn">переименовать папку</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="deleteDerectId" placeholder="id">
+                <button class="btn" id="deleteDerectBtn">удалить папку</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="getDerectId" placeholder="id">
+                <button class="btn" id="getDerectBtn">список файлов папки</button>
+            </div>
+        </div>
+
+        <div class="derect-content">
+            <div class="input-group">
+                <input type="text" id="fileAccessIdFile" placeholder="id file">
+                <input type="text" id="fileAccessIdUser" placeholder="id user">
+                <button class="btn" id="fileAccessBtn">предоставить доступ к файлу</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="fileRemoveAccessIdFile" placeholder="id file">
+                <input type="text" id="fileRemoveAccessIdUser" placeholder="id user">
+                <button class="btn" id="fileRemoveAccessBtn">ограничить доступ к файлу</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="fileGetIdUser" placeholder="id file">
+                <button class="btn" id="fileGetBtn">список пользователей с доступом</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="content"></div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
